@@ -1,0 +1,48 @@
+/* Aplica somente o que tiver dentro dos conchetes */
+
+[required] {
+  border: 1px solid greenyellow;
+}
+
+a[href="#contato"] {
+  border: 1px solid red;
+}
+
+/* Começa com: "#=" */
+
+[href^="#"] {
+  background: palegoldenrod;
+}
+
+/* Termina com: "$=" */
+
+[href$=".com"] {
+  background: yellow;
+}
+
+/* Selecionar apenas o h2 como filho direto do section: ">" */
+
+section > h2 {
+  color: blueviolet;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+/* Seleciona os elementos que vierem depois do primeiro elemento: "p" */
+
+p + p {
+  margin-top: 20px;
+}
+
+/* Seleciona todos os elementos da tela: "*" */
+
+* {
+  border: 2px solid red;
+}
